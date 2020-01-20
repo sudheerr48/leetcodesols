@@ -1,0 +1,14 @@
+object Solution {
+    def reverse(x: Int): Int = {
+        try{
+        var y = 0
+        var z = 0
+        
+        if((x > 0)){x.toString.reverse.toInt}
+        else {y = x*(-1); z = y.toString.reverse.toInt ;  z*(-1) }
+        } catch {
+            case ex: NumberFormatException =>{0}
+        }
+        
+    }
+}
